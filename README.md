@@ -5646,7 +5646,7 @@ plt.plot(zdf_by_zip['Nationwide']);
 ```
 
 
-![png](student_files/student_49_0.png)
+![png](output_49_0.png)
 
 
 I'll go ahead and decompose it so I can see what the big picture looks like.
@@ -5658,7 +5658,7 @@ fig = sm.tsa.seasonal_decompose(zdf_by_zip['Nationwide']).plot();
 ```
 
 
-![png](student_files/student_51_0.png)
+![png](output_51_0.png)
 
 
 Autocorrelation and partial autocorrelation plots to help with determing AR and MA values.
@@ -5670,7 +5670,7 @@ pd.plotting.autocorrelation_plot(zdf_by_zip['Nationwide'][-48:]);
 ```
 
 
-![png](student_files/student_53_0.png)
+![png](output_53_0.png)
 
 
 
@@ -5684,7 +5684,7 @@ plot_acf(zdf_by_zip['Nationwide'], lags = 100);
 ```
 
 
-![png](student_files/student_54_0.png)
+![png](output_54_0.png)
 
 
 
@@ -5698,7 +5698,7 @@ plot_pacf(zdf_by_zip['Nationwide'], lags = 100);
 ```
 
 
-![png](student_files/student_55_0.png)
+![png](output_55_0.png)
 
 
 I'll again use the example Portsmouth NH zipcode to see how one part of the picture might look on its own.
@@ -5710,7 +5710,7 @@ plt.plot(zdf_by_zip[3801]);
 ```
 
 
-![png](student_files/student_57_0.png)
+![png](output_57_0.png)
 
 
 
@@ -5720,7 +5720,7 @@ sm.tsa.seasonal_decompose(zdf_by_zip[3801]).plot();
 ```
 
 
-![png](student_files/student_58_0.png)
+![png](output_58_0.png)
 
 
 
@@ -5731,7 +5731,7 @@ plot_acf(zdf_by_zip[3801], lags = 100);
 ```
 
 
-![png](student_files/student_59_0.png)
+![png](output_59_0.png)
 
 
 
@@ -5741,7 +5741,7 @@ pd.plotting.autocorrelation_plot(zdf_by_zip[3801][-48:]);
 ```
 
 
-![png](student_files/student_60_0.png)
+![png](output_60_0.png)
 
 
 
@@ -5752,7 +5752,7 @@ plot_pacf(zdf_by_zip[3801], lags = 100);
 ```
 
 
-![png](student_files/student_61_0.png)
+![png](output_61_0.png)
 
 
 # ARIMA Modeling
@@ -5902,11 +5902,11 @@ train_test_SARIMAX(zdf_by_zip['Nationwide'],
 
 
 
-![png](student_files/student_78_1.png)
+![png](output_78_1.png)
 
 
 
-![png](student_files/student_78_2.png)
+![png](output_78_2.png)
 
 
 #### SARIMAX Example Test
@@ -5937,11 +5937,11 @@ train_test_SARIMAX(zdf_by_zip[3801],
 
 
 
-![png](student_files/student_81_1.png)
+![png](output_81_1.png)
 
 
 
-![png](student_files/student_81_2.png)
+![png](output_81_2.png)
 
 
 #### SARIMAX Nationwide Foreccast
@@ -5971,11 +5971,11 @@ forecast_SARIMAX(data = zdf_by_zip['Nationwide'],
 
 
 
-![png](student_files/student_84_1.png)
+![png](output_84_1.png)
 
 
 
-![png](student_files/student_84_2.png)
+![png](output_84_2.png)
 
 
 #### SARIMAX Example Forecast
@@ -6005,11 +6005,11 @@ forecast_SARIMAX(zdf_by_zip[60625],
 
 
 
-![png](student_files/student_88_1.png)
+![png](output_88_1.png)
 
 
 
-![png](student_files/student_88_2.png)
+![png](output_88_2.png)
 
 
 ### ARIMA Modeling
@@ -6050,7 +6050,7 @@ train_test_ARIMA(zdf_by_zip['Nationwide'], (1,1,3), start = '2013-04-01')
 
 
 
-![png](student_files/student_91_1.png)
+![png](output_91_1.png)
 
 
 #### ARIMA Example Test
@@ -6089,7 +6089,7 @@ train_test_ARIMA(zdf_by_zip[3801], (1,1,3), start = '2013-04-01')
 
 
 
-![png](student_files/student_93_1.png)
+![png](output_93_1.png)
 
 
 #### ARIMA Nationwide Forecast
@@ -6102,7 +6102,7 @@ forecast_ARIMA(zdf_by_zip['Nationwide'], (1,1,3), forecast_length = 120)
 ```
 
 
-![png](student_files/student_96_0.png)
+![png](output_96_0.png)
 
 
 #### ARIMA Example Forecast
@@ -6113,7 +6113,7 @@ forecast_ARIMA(zdf_by_zip[60618], (1,1,3), forecast_length = 120)
 ```
 
 
-![png](student_files/student_98_0.png)
+![png](output_98_0.png)
 
 
 ## Modeling All Zipcodes
@@ -7585,7 +7585,7 @@ forecast_ARIMA(zdf_by_zip[80204], order=(1,1,3), forecast_length=120,
 ```
 
 
-![png](student_files/student_150_0.png)
+![png](output_150_0.png)
 
 
 Denver has been experiencing explosive growth in recent years as a magnet for technology companies new and old to gather. 
@@ -7614,7 +7614,7 @@ plt.show();
 ```
 
 
-![png](student_files/student_153_0.png)
+![png](output_153_0.png)
 
 
 Plotting them all together for comparison.
@@ -7651,7 +7651,7 @@ plt.show();
 ```
 
 
-![png](student_files/student_155_0.png)
+![png](output_155_0.png)
 
 
 Getting 10 year forecast figure for Nationwide model since that information doesn't yet exist outside of a function.
@@ -7700,7 +7700,7 @@ plt.show()
 ```
 
 
-![png](student_files/student_160_0.png)
+![png](output_160_0.png)
 
 
 Similarly represnting the dollar amonunt of gain over ten years given a purchase price of the current average. 80203 takes top honors there, but you'll need a fatter pocket book to make that money.
@@ -7745,7 +7745,7 @@ plt.show()
 ```
 
 
-![png](student_files/student_162_0.png)
+![png](output_162_0.png)
 
 
 ## Summary Table
