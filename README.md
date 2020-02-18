@@ -1,11 +1,18 @@
+**Related Links:**
+
+Blog Post:
+<https://terryollila.github.io/parameter_wrangling_on_massive_data_sets>
+
+Video Presentation:
+<https://vimeo.com/389132045>
 
 # Premise
 
 The purpose of this analysis is to explore  the forecasting for multiple zip codes in the United States in order to assess the best possible opportunities for real estate investment.
 
-In pursuit of this investigation, I will attempt to begin at a national level, using ARIMA and/or SARIMAX methodology and modeling to assess the most promising locations. To do this, I will begin with the strongest state as determined by average forecasted percent return on invesment over the next ten years, and from there, find the strongest county within that state, then the strongest city within that county, and finally the five zip codes within that city, again, all judged by percent return on investment over the next ten years.
+In pursuit of this investigation, I will attempt to begin at a national level, using ARIMA and/or SARIMAX methodology and modeling to assess the most promising locations. To do this, I will begin with the strongest state as determined by average forecasted percent return on investment over the next ten years, and from there, find the strongest county within that state, then the strongest city within that county, and finally the five zip codes within that city, again, all judged by percent return on investment over the next ten years.
 
-The models will be tuned in such a way as to capture this information with the greatest precision and accuracy as possible before drillingn down to the state, county, city, and ultimately zip code levels. 
+The models will be tuned in such a way as to capture this information with the greatest precision and accuracy as possible before drilling down to the state, county, city, and ultimately zip code levels. 
 
 I will not attempt to ascertain the top five zip codes in the entire country. Instead I will attempt to locate the top zipcodes in the top city of the top county of the top state. This method will ensure strength in the surrounding areas, rather than pursuing what could be isolated zip codes showing unsustainable and perhaps misleading or illusory figures. 
 
