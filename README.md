@@ -75,19 +75,7 @@ Finally, I'll put together a final table to display 5 and 10 year growth figures
 This wraps up the analysis with a succint summary of figures for the top 5 zip codes in my analysis.
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
